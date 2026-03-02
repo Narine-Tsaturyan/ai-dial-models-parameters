@@ -12,7 +12,7 @@ class DialClient:
     _api_key: str
 
     def __init__(self, endpoint: str, deployment_name: str):
-        api_key = os.getenv('DIAL_API_KEY', '')
+        api_key = os.getenv('DIAL_API_KEY', 'dial-kqibp66vnaqthq1nnve8gzqynij')
         if not api_key or api_key.strip() == "":
             raise ValueError("API key cannot be null or empty")
 
